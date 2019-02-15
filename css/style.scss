@@ -1,0 +1,129 @@
+body {
+  padding-top: 14px;
+  font: {
+    family: 'Times New Roman', Times, serif;
+    size: 12px;
+  }
+  color: #595959;
+  background: #000000;
+}
+
+.cont__title {
+  color: #ffffff;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+  background: #000000;
+  .topic--left {
+    width: 425px;
+    float: left;
+    margin-right: 9px;
+  }
+  .topic--right {
+    height: 385px;
+    width: 237px;
+    float: left;
+    background: #242328;
+    p {
+      margin: 0px 31px 4px 25px;
+      line-height: 1;
+      &:last-of-type{color: #767884;}
+    }
+    // .cont__title {
+    //   margin: 1px 32px 7px 25px;
+    // }
+    .more__info {
+      margin: 32px 25px;
+      border: none;
+    }
+  }
+}
+
+
+.cont__info {
+  position: relative;
+  padding-bottom: 23px;
+  // padding-top: 29px;
+  img, .cont__info__text {
+    float: left;
+  }
+  .cont__info__text {
+    margin-left: 22px;
+    width: (425px - 129px - 20px - 20px + 14px);
+    .cont__title {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
+  img {
+    margin-left: 3px;
+    border-radius: 6%;
+  }
+  p {line-height: (10 / 12);}
+}
+
+
+.more__info {
+  border-top: 1px dotted #353439;
+  color: #fff;
+  padding-top: 15px;
+  // margin-right: 28px;
+}
+
+.topic--right__img {
+  padding: 28px 0 17px 0;
+  border-top: 1px solid #353439;
+  margin-top: 72px;
+  margin-left: 22px;
+  margin-right: 22px;
+  text-align: center;
+}
+
+#topic--left__title p {
+  margin-top: 16px;
+  margin-bottom: 38px;
+}
+
+.content__bottom {
+  margin-top: 80px;
+  .cont__list__info {
+    display: flex;
+  }
+  ul {
+    float: left;
+    // width: (425px / 2);
+    padding: 0px;
+    margin-right: 3px;
+  }
+  li {
+    list-style-type: none;
+    margin-bottom: 9px;
+    i {
+      margin-right: 8px;
+    }
+    a {
+      color: #595959;
+    }
+  }
+  p{
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  .more__info {
+    margin-top: -25px;
+    padding-top: 13px;
+  }
+}
+
+#txt-special {
+  position: absolute;
+  bottom: 0px;
+  line-height: 1.2;
+}
+
