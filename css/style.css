@@ -54,6 +54,12 @@ body {
   border-top: 1px dotted #353439;
   color: #fff;
   padding-top: 15px; }
+  .more__info a {
+    text-decoration: none;
+    position: relative;
+    z-index: 1000;
+    color: #fff;
+    cursor: pointer; }
 
 .topic--right__img {
   padding: 28px 0 17px 0;
