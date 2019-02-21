@@ -18,7 +18,8 @@ body {
   .container .topic--left {
     width: 425px;
     float: left;
-    margin-right: 9px; }
+    margin-right: 9px;
+    padding-left: 10px; }
   .container .topic--right {
     height: 385px;
     width: 237px;
@@ -30,12 +31,15 @@ body {
       .container .topic--right p:last-of-type {
         color: #767884; }
     .container .topic--right .more__info {
-      margin: 32px 25px;
-      border: none; }
+      top: 45px;
+      left: 25px; }
+
+.content--top .cont__info {
+  margin-left: -10px;
+  padding-bottom: 13px; }
 
 .cont__info {
-  position: relative;
-  padding-bottom: 23px; }
+  border-bottom: 1px dotted #353439; }
   .cont__info img, .cont__info .cont__info__text {
     float: left; }
   .cont__info .cont__info__text {
@@ -48,18 +52,21 @@ body {
     margin-left: 3px;
     border-radius: 6%; }
   .cont__info p {
+    margin-bottom: -3px;
     line-height: 0.8333333333; }
 
 .more__info {
-  border-top: 1px dotted #353439;
+  position: relative;
+  z-index: 1000;
+  top: 14px;
+  text-decoration: none;
   color: #fff;
-  padding-top: 15px; }
-  .more__info a {
-    text-decoration: none;
+  cursor: pointer; }
+  .more__info::before {
+    content: url("../images/btn_more_info.png");
     position: relative;
-    z-index: 1000;
-    color: #fff;
-    cursor: pointer; }
+    bottom: -2px;
+    margin-right: 6px; }
 
 .topic--right__img {
   padding: 28px 0 17px 0;
@@ -74,7 +81,7 @@ body {
   margin-bottom: 38px; }
 
 .content__bottom {
-  margin-top: 80px; }
+  margin-top: 95px; }
   .content__bottom .cont__list__info {
     display: flex; }
   .content__bottom ul {
@@ -91,13 +98,10 @@ body {
   .content__bottom p {
     margin-top: 0px;
     margin-bottom: 5px; }
-  .content__bottom .more__info {
-    margin-top: -25px;
-    padding-top: 13px; }
 
 #txt-special {
-  position: absolute;
-  bottom: 0px;
   line-height: 1.2; }
+  #txt-special span {
+    padding-left: 14px; }
 
 /*# sourceMappingURL=style.css.map */
